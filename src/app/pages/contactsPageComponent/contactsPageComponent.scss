@@ -1,0 +1,20 @@
+body.contacts-page {
+  background: #f7f4f1 url('../../../assets/light-bg.jpg') no-repeat center top;
+
+  main {
+    color: #000;
+  }
+
+  .row {
+    display: flex;
+    margin-top: 40px;
+
+    .left {
+      flex: 1;
+    }
+
+    .right {
+      flex: 2;
+    }
+  }
+}

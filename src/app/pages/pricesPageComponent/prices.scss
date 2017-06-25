@@ -1,0 +1,93 @@
+body.prices-page {
+  background: #f7f4f1 url('../../../assets/light-bg.jpg') no-repeat center top;
+}
+
+body.prices-page main {
+  color: #000;
+}
+
+.prices-page {
+  h2 {
+    font-size: 24px;
+  }
+
+  .fancy-heading {
+    border-bottom: 3px solid black;
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    width: 100%;
+
+    h1 {
+      /* Looks not so good, TODO: think about abother way to do it */
+      position: absolute;
+      top: -62px;
+      width: 370px;
+      background: #f7f4f1;
+      font-size: 48px;
+      padding: 0 15px;
+      left: 50%;
+      margin-left: -185px;
+    }
+  }
+
+  .row {
+    /* TODO: extract styles? */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .left {
+      flex: 3;
+    }
+
+    .right {
+      flex: 2;
+    }
+  }
+
+  ul.rombic {
+    list-style: none;
+    padding: 0;
+    padding-left: 18px;
+
+    li {
+      margin-bottom: 20px;
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 5px;
+        height: 5px;
+        position: absolute;
+        background: #000;
+        top: 7px;
+        left: -12px;
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  .prices-table {
+    border: 2px solid #000;
+    border-collapse: collapse;
+    width: 100%;
+
+    tr {
+      border: 2px solid #000;
+
+      td {
+        border-right: 2px solid #000;
+        padding: 10px 8px;
+
+        &.label {
+          width: 50%;
+        }
+
+        &.value {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

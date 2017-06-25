@@ -1,0 +1,67 @@
+<div class="logo">
+    <img src="./assets/logo.png" width="368" height="204" alt="">
+</div>
+<div class="features clearfix">
+    <div class="block">
+        <h2>Fast</h2>
+        <p>We make out work fast! Two hours will pass unnoticed and you are got new haircut!</p>
+    </div>
+    <div class="block">
+        <h2>Awesome</h2>
+        <p>Forget how did you lose earlier. We will make a star of movie from you!</p>
+    </div>
+    <div class="block">
+        <h2>Expensive</h2>
+        <p>Our masters - professionals and cannot cost cheap.</p>
+    </div>
+</div>
+<div class="content clearfix">
+    <div class="left">
+        <h2>News</h2>
+        <ul class="news">
+            <li>
+                <p>We finally got egermeaster! Now you can miss the wheel anytime.</p>
+                <time>25 сентября</time>
+            </li>
+            <li>
+                <p>We got new team member - Boris "Britau", owner of set of titles.</p>
+                <time>19 сентября</time>
+            </li>
+        </ul>
+        <a href="#" class="btn">More news</a>
+    </div>
+    <div class="right">
+        <h2>Gallery</h2>
+        <div class="gallery-wrapper">
+            <figure>
+                <img src="./assets/gallery.jpg" width="286" height="164" alt="">
+            </figure>
+            <a href="#" class="btn prev">Previous</a>
+            <a href="#" class="btn next">Next</a>
+        </div>
+    </div>
+</div>
+<div class="content clearfix">
+    <div class="left">
+        <h2>Contacts</h2>
+        <p>
+            Barbershop «Borodinsy» <br> Address: Sankt-Peterburg, Bolshaya Konyushennaya ul.<br> Phone: +7 (495) ***-02-66<br>
+        </p>
+        <p>
+            Working hours: <br> MON — FRI: 10:00 - 22:00 <br> SAT — SUN: 10:00 - 19:00 <br>
+        </p>
+        <a ui-sref="contacts" class="btn">How get to us</a>
+        <a href="#" class="btn" ng-click="$ctrl.openFeedbackForm()">Feedback</a>
+    </div>
+    <div class="right">
+        <h2>Make an appointment</h2>
+        <p>Please fill date and time and we'll get in touch</p>
+        <form action="" name="signIn" class="sign-in">
+            <input type="text" required ng-model="date" placeholder="Date" />
+            <input type="text" required ng-model="time" placeholder="Time" />
+            <input type="text" required ng-model="name" placeholder="Name" />
+            <input type="text" required ng-model="phone" placeholder="Phone" />
+            <button class="btn submit" type="button" ng-click="$ctrl.openSignInSuccessModal()" ng-disabled="signIn.$invalid">Send</button>
+        </form>
+    </div>
+</div>

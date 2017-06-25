@@ -1,0 +1,66 @@
+footer {
+    width: 100%;
+    margin-top: 65px;
+    
+    height: 190px;
+    background: url('./assets/footer.jpg') no-repeat center;
+}
+
+footer .container {
+    padding-top: 60px;
+    padding-bottom: 35px;
+}
+
+footer .info {
+    float: left;
+    min-height: 90px;
+    width: 320px;
+    margin-right: 80px;
+}
+
+footer .social {
+    float: left;
+    text-align: center;
+    min-height: 90px;
+    width: 140px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .social .icon {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    margin-top: 20px;
+    background: #000;
+    cursor: pointer;
+}
+
+footer .social .vk {
+    background: #000 url('./assets/v.png') no-repeat center;
+}
+
+footer .social .fb {
+    background: #000 url('./assets/f.png') no-repeat center;
+}
+
+footer .social .ig {
+    background: #000 url('./assets/ig.png') no-repeat center;
+}
+
+footer .builtby {
+    float: right;
+    margin-right: 10px;
+    min-height: 90px;
+    text-align: center;
+    width: 140px;
+}
+
+footer .builtby .btn {
+    margin-top: 20px;
+    width: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}

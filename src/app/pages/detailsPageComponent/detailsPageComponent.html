@@ -1,0 +1,16 @@
+<div class="details-page">
+  <b class="page-title">{{$ctrl.item.name}}</b>
+
+  <div class="row">
+    <div class="left">
+      <img ng-src="{{$ctrl.getLgImagePath()}}">
+    </div>
+    <div class="right">
+      <p class="description">{{$ctrl.item.description}}</p>
+      <div class="buttons">
+        <span class="price">{{$ctrl.item.price | currency}}</span>
+        <button class="btn buy">Buy</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,76 @@
+body.shop-page {
+  background: #f7f4f1 url('../../../assets/light-bg.jpg') no-repeat center top;
+
+  main {
+    color: #000;
+  }
+
+  .shop-content {
+    margin-top: 40px;
+    display: flex;
+
+    .left {
+      flex: 1;
+    }
+
+    .right {
+      flex: 2;
+      min-width: 700px;
+
+      .items-container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+%checkbox-part {
+  position: absolute;
+  top: 9px;
+  left: 1px;
+  content: "";
+  width: 18px;
+  height: 2px;
+  background-color: #000;
+}
+
+.manufacturers-list {
+  label {
+    display: block;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    position: relative;
+
+    input {
+      position: absolute;
+      opacity: 0;
+
+      &:checked ~ .control::before {
+        @extend %checkbox-part;
+        transform: rotate(45deg);
+      }
+
+      &:checked ~ .control::after {
+        @extend %checkbox-part;
+        transform: rotate(-45deg);
+      }
+    }
+
+    .control {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      border: 2px solid #000;
+      left: 0;
+      top: -3px;
+    }
+  }
+}
+
+.item-card-wrapper {
+  display: inline-block;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}

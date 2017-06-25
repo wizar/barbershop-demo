@@ -1,0 +1,49 @@
+body.details-page {
+  background: #f7f4f1 url('../../../assets/light-bg.jpg') no-repeat center top;
+
+  main {
+    color: #000;
+  }
+
+  .row {
+    display: flex;
+    margin-top: 40px;
+
+    .left {
+      flex: 2;
+
+      img {
+        width: 460px;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    .right {
+      flex: 1;
+
+      .description {
+        line-height: 24px;
+        margin-bottom: 30px;
+      }
+
+      .buttons {
+        .price {
+          display: inline-block;
+          width: 100px;
+          height: 40px;
+          line-height: 40px;
+          /* vertical-align: middle; */
+          text-align: center;
+          background-color: #e5e5e5;
+        }
+
+        .buy {
+          width: 90px;
+          height: 40px;
+          margin-left: -3px;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

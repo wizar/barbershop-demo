@@ -1,0 +1,43 @@
+.item-card {
+  display: inline-block;
+  width: 220px;
+  height: 250px;
+  padding: 15px 0;
+  background: #f7f7f7;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+  transition: transform .5s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  .image {
+    cursor: pointer;
+  }
+
+  .name {
+    padding: 10px 15px;
+  }
+
+  .buttons {
+    padding: 0 15px;
+    margin-bottom: 15px;
+
+    .price {
+      display: inline-block;
+      width: 100px;
+      height: 40px;
+      line-height: 40px;
+      /* vertical-align: middle; */
+      text-align: center;
+      background-color: #e5e5e5;
+    }
+
+    .buy {
+      width: 90px;
+      height: 40px;
+      margin-left: -3px;
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<div class="shop-page">
+  <b class="page-title">Care products</b>
+
+  <div class="row shop-content">
+    <div class="left">
+      <h2>Manufacturers:</h2>
+      <div class="manufacturers-list">
+        <label ng-repeat="manufacturer in $ctrl.manufacturers">
+          <input type="checkbox" checklist-model="$ctrl.selectedManufacturers" checklist-value="manufacturer"> {{manufacturer}}
+          <span class="control"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="items-container">
+        <div class="item-card-wrapper" ng-repeat='item in $ctrl.items | inArray:$ctrl.selectedManufacturers:"manufacturer"'>
+          <item-card item="item"></item-card>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ui-view></ui-view>
+</div>

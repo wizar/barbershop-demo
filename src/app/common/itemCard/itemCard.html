@@ -1,0 +1,8 @@
+<div class="item-card">
+  <img class="image" ng-src="{{$ctrl.getImgPath()}}" width="220" height="165" ui-sref="shop.details({ itemId: $ctrl.item.id })"></img>
+  <div class="name">{{$ctrl.item.name}}</div>
+  <div class="buttons">
+    <span class="price">{{$ctrl.item.price | currency}}</span>
+    <button class="btn buy">Buy</button>
+  </div>
+</div>

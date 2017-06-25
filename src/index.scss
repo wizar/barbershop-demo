@@ -1,0 +1,73 @@
+body,
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #000;
+    background: #000 url('./assets/tint.jpg') no-repeat center top;
+    color: #fff;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.container {
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.btn {
+    display: inline-block;
+    margin: 0;
+    padding: 10px 30px;
+    margin-right: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-transform: uppercase;
+    background: #000;
+    text-decoration: none;
+}
+
+.btn:disabled {
+    background: #d1cfcc;
+}
+
+.page-title {
+    font-size: 30px;
+}
+
+.main-container {
+    min-height: 100%;
+    margin-bottom: -190px;
+
+    &:after {
+        content: "";
+        display: block;
+        height: 190px;
+    }
+}
+
+.scroll-wrap {
+    overflow-y: scroll;
+    height: 100%;
+    max-height: 100%;
+    display: block;
+    position: relative;
+}

@@ -1,0 +1,25 @@
+<!doctype html>
+<html ng-app="app" ng-controller="BodyClassController as ctrl" ng-strict-di>
+
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <title>Barbershop «Borodinsy»</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+</head>
+
+<body ng-class="ctrl.bodyClass">
+  <div class="scroll-wrap">
+    <div class="main-container">
+      <bs-header></bs-header>
+      <main class="container">
+        <ui-view></ui-view>
+      </main>
+    </div>
+    <bs-footer></bs-footer>
+  </div>
+  <script src="http://maps.google.com/maps/api/js"></script>
+</body>
+</html>
